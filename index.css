@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;  
+
+
+body{
+  background-color: #F5F5F5 !important;  
+}
+
+  .input:active, .input:focus{
+    outline: none;
+    border: none;
+  }
+  .table1{
+    display: table-cell;
+  }
+
+  .header-logo::before{
+    content: '';
+    background: linear-gradient(229deg, #1b2a8f 15%, #008fc4 47%, #2dd4ff 50%, #008fc4 53%, #1b2a8f 85%);
+    position: absolute;
+    width: 105px;
+    height: 105px;
+    border-radius: 50%;
+    top: 43px;
+    left: 50px;
+    background-size: 300% 300%;
+    z-index: 11;
+    animation: gradient 7s ease infinite;
+  }
+
+  @keyframes gradient{
+    0%{
+      background-position: 0% 50%;
+    }
+    50%{
+      background-position: 100% 50%;
+    }
+    100%{
+      background-position: 0% 50%;
+    }
+  }
+
+  .product-title{
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    min-height: 58px;
+  }
+  .dropdown-toggle:active,  .dropdown-toggle:focus, .dropdown-toggle:hover {
+   border: none !important;
+   outline: none !important;
+   background: none !important;
+   box-shadow: none !important;
+   
+  }
+  .text{
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    min-height: 58px;
+  }
+  .swiper-container {
+    width: 480px;
+  }
+  
+  @media screen and (min-width: 640px) {
+    .swiper-container {
+      width: 640px;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .swiper-container {
+      width: 768px;
+    }
+  }
+  .swiper-wrapper{
+    height: 300px;
+  }
